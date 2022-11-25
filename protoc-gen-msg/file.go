@@ -50,7 +50,8 @@ func (self *msgModel) MsgID() int {
 }
 
 func (self *msgModel) FullName() string {
-	return fmt.Sprintf("%s.%s", self.parent.PackageName(), self.Name())
+	// return fmt.Sprintf("%s.%s", self.parent.PackageName(), self.Name())
+	return fmt.Sprintf("%s", self.Name())
 }
 
 type protoModel struct {
